@@ -1,0 +1,4 @@
+name: God Jul
+markdown: redcarpet
+pygments: true
+permalink: /:categories/:year/:title/

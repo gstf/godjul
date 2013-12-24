@@ -1,0 +1,20 @@
+{
+  "name": "godjul",
+  "version": "3.0.0",
+  "authors": [
+    "Gustaf Lindqvist <gustaf@hexkod.se>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "respond": "~1.3.0"
+  }
+}
