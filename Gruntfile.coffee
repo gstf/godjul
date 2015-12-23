@@ -35,36 +35,7 @@ module.exports = (grunt) ->
     uglify:
       main:
         files:
-          "<%= out %>/js/main.min.js": ["<%= bootstrap %>/js/collapse.js", "build/assets/js/main.js"]
-          "<%= out %>/js/libs/respond.min.js": ["<%= components %>/respond/respond.src.js"]
-
-    modernizr:
-      main:
-        "devFile" : "<%= components %>/modernizr/modernizr.js",
-        "outputFile" : "<%= out %>/js/libs/modernizr.custom.min.js",
-        "extra" : {
-          "shiv" : true,
-          "printshiv" : false,
-          "load" : true,
-          "mq" : false,
-          "cssclasses" : true
-        },
-
-        "extensibility" : {
-          "rgba" : true,
-          "svg" : true,
-          "csstransforms" : true,
-        },
-
-        "uglify" : true,
-
-        "tests" : [],
-
-        "parseFiles" : false,
-
-        "matchCommunityTests" : false,
-
-        "customTests" : []
+          "<%= out %>/js/main.min.js": ["build/assets/js/main.js"]
 
     watch:
       watch:
@@ -82,6 +53,5 @@ module.exports = (grunt) ->
     out: "src"
 
   grunt.loadNpmTasks("grunt-contrib")
-  grunt.loadNpmTasks("grunt-modernizr")
 
-  grunt.registerTask("default", ["clean", "modernizr", "coffee", "uglify", "less", "cssmin", "copy"])
+  grunt.registerTask("default", ["clean", "coffee", "uglify", "less", "cssmin", "copy"])
