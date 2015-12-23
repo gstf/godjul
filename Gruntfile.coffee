@@ -39,31 +39,32 @@ module.exports = (grunt) ->
           "<%= out %>/js/libs/respond.min.js": ["<%= components %>/respond/respond.src.js"]
 
     modernizr:
-      "devFile" : "<%= components %>/modernizr/modernizr.js",
-      "outputFile" : "<%= out %>/js/libs/modernizr.custom.min.js",
-      "extra" : {
-        "shiv" : true,
-        "printshiv" : false,
-        "load" : true,
-        "mq" : false,
-        "cssclasses" : true
-      },
+      main:
+        "devFile" : "<%= components %>/modernizr/modernizr.js",
+        "outputFile" : "<%= out %>/js/libs/modernizr.custom.min.js",
+        "extra" : {
+          "shiv" : true,
+          "printshiv" : false,
+          "load" : true,
+          "mq" : false,
+          "cssclasses" : true
+        },
 
-      "extensibility" : {
-        "rgba" : true,
-        "svg" : true,
-        "csstransforms" : true,
-      },
+        "extensibility" : {
+          "rgba" : true,
+          "svg" : true,
+          "csstransforms" : true,
+        },
 
-      "uglify" : true,
+        "uglify" : true,
 
-      "tests" : [],
+        "tests" : [],
 
-      "parseFiles" : false,
+        "parseFiles" : false,
 
-      "matchCommunityTests" : false,
+        "matchCommunityTests" : false,
 
-      "customTests" : []
+        "customTests" : []
 
     watch:
       watch:
