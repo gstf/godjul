@@ -9,9 +9,9 @@ title: God Jul
 
   <div class="col-sm-12">
     <h1 class="text-center">God Jul</h1>
-    <p class="lead text-center">Välkommen till vår julehemsida för 13e(!!!!) året i rad! Skriv gärna något i gästboken så blir vi megaglada!</p>
+    <p class="lead text-center">Välkommen till vår julehemsida för 14e(!!!!) året i rad! Skriv gärna något i gästboken så blir vi megaglada!</p>
 
-    <p><img src="/img/julkorten/2014/julkortet.jpg" alt="God jul" class="img-responsive" /></p>
+    <p><a href="/pepparkakshusen/2015/husby/"><img src="/img/julkorten/2015/julkortet.jpg" alt="God jul" class="img-responsive" /></a></p>
   </div>
 
 </div>
@@ -22,7 +22,7 @@ title: God Jul
 
 <div class="row">
 {% for post in site.categories['pepparkakshusen'] %}
-  <div class="col-md-4 col-sm-3 front-item">
+  <div class="col-md-4 col-sm-6 front-item">
     <div class="inner">
       <img src="/img/pepparkakshusen/{{ post.date | date: "%Y" }}/featured.jpg" alt="{{ post.title }}" class="img-responsive" />
       <a href="{{ post.url }}"><strong>{{ post.date | date: "%Y" }}:</strong> {{ post.title }}</a>
