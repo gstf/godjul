@@ -5,7 +5,7 @@ ready = (fn) ->
     document.addEventListener('DOMContentLoaded', fn);
 
 ready ->
-  [].forEach.call(document.querySelector('img'), (img) ->
+  [].forEach.call(document.querySelectorAll('img'), (img) ->
     if (img.classList)
       img.classList.add('img-responsive')
   )
