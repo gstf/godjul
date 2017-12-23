@@ -9,8 +9,8 @@ God Jul, kolla på www.julen.pl
 sudo gem install jekyll -v '2.5.3'  # only tested version
 
 npm install
-./node-modules/.bin/bower install
-./node-modules/.bin/grunt
+./node_modules/.bin/bower install
+./node_modules/.bin/grunt
 ```
 
 ## jekyll cmd
